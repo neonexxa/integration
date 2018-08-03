@@ -32,7 +32,8 @@
           <ul class="navbar-nav ml-auto">
           	
             <li class="nav-item">
-              <a href="#" class="nav-link"><div class="g-signin2" data-onsuccess="onSignIn">LOGIN</div></a>
+            	<a href="#" class="nav-link"><div class="g-signin2" onclick="login()">LOGIN</div></a>
+              <!-- <a href="#" class="nav-link"><div class="g-signin2" data-onsuccess="onSignIn">LOGIN</div></a> -->
             </li>
           </ul>
       </div>
@@ -205,13 +206,11 @@
 			    console.error("Error writing document: ", error);
 			});
 		});
-		function onSignIn(googleUser) {
-		  var profile = googleUser.getBasicProfile();
-		  console.log('ID: ' + profile.getId()); // Do not send to your backend! Use an ID token instead.
-		  console.log('Name: ' + profile.getName());
-		  console.log('Image URL: ' + profile.getImageUrl());
-		  console.log('Email: ' + profile.getEmail()); // This is null if the 'email' scope is not present.
+		function login() {
+			var provider = new firebase.auth.GoogleAuthProvider();
+			firebase.auth().signInWithRedirect(provider);
 		}
+		
 	});
 </script>
 </body>
