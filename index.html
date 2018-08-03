@@ -1,0 +1,218 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Hello, world!</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="google-signin-client_id" content="smecorp-neo.apps.googleusercontent.com">
+    <!--     Fonts and icons     -->
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
+    <!-- Material Kit CSS -->
+    <link rel="stylesheet" href="https://demos.creative-tim.com/material-kit-pro/assets/css/material-kit.min.css?v=2.1.0">
+    <link href="http://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.9/summernote.css" rel="stylesheet">
+  </head>
+  <body><nav class="navbar navbar-color-on-scroll navbar-transparent fixed-top navbar-expand-lg"  color-on-scroll="100">
+  <div class="container">
+      <div class="navbar-translate">
+        <a class="navbar-brand" href="https://demos.creative-tim.com/material-kit-pro/index.html">
+          Material Kit PRO </a>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="navbar-toggler-icon"></span>
+            <span class="navbar-toggler-icon"></span>
+            <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+
+      <div class="collapse navbar-collapse">
+          <ul class="navbar-nav ml-auto">
+          	
+            <li class="nav-item">
+              <a href="#" class="nav-link"><div class="g-signin2" data-onsuccess="onSignIn">LOGIN</div></a>
+            </li>
+          </ul>
+      </div>
+  </div>
+</nav>
+
+
+<div class="page-header header-filter" data-parallax="true" style="background-image: url('https://demos.creative-tim.com/material-kit-pro/assets/img/bg3.jpg')">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8 ml-auto mr-auto">
+        <div class="brand text-center">
+          <h1>Your title here</h1>
+          <h3 class="title text-center">Subtitle</h3>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="main main-raised">
+  <div class="container">
+  	<div class="section text-center" id="blogcard">
+  		
+  	</div>
+    <div class="section text-center">
+      <h2 class="title">Your main section here</h2>
+      <form id="blogpost" method="POST">
+          <div class="form-group">
+		    <label for="title">Title</label>
+		    <input type="text" class="form-control" id="title" name="title" placeholder="Title">
+		  </div>
+		  <div class="form-group">
+		    <label for="author">Email address</label>
+		    <input type="email" class="form-control" id="author" name="author" aria-describedby="emailHelp" placeholder="Enter email">
+		    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+		  </div>
+		  <div class="form-group">
+		    <label for="summernote">Example textarea</label>
+		    <textarea class="form-control" id="summernote" name="content" rows="3"></textarea>
+		  </div>
+		  <div class="form-check">
+		      <label class="form-check-label">
+		          <input class="form-check-input" type="checkbox" value="" name="publish">
+		          Publish (default is draft)
+		          <span class="form-check-sign">
+		              <span class="check"></span>
+		          </span>
+		      </label>
+		  </div>
+
+		  <button type="submit" class="btn btn-primary">Submit</button>
+		</form>
+    </div>
+  </div>
+</div>
+
+<footer class="footer footer-default" >
+  <div class="container">
+    <nav class="float-left">
+      <ul>
+        <li>
+          <a href="https://www.creative-tim.com/">
+              Creative Tim
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <div class="copyright float-right">
+        &copy;
+        <script>
+            document.write(new Date().getFullYear())
+        </script>, made with <i class="material-icons">favorite</i> by
+        <a href="https://www.creative-tim.com/" target="blank">Creative Tim</a> for a better web.
+    </div>
+  </div>
+</footer>
+<!--   Core JS Files   -->
+<script src="https://demos.creative-tim.com/material-kit-pro/assets/js/core/jquery.min.js" type="text/javascript"></script>
+<script src="https://demos.creative-tim.com/material-kit-pro/assets/js/core/popper.min.js" type="text/javascript"></script>
+<script src="https://demos.creative-tim.com/material-kit-pro/assets/js/core/bootstrap-material-design.min.js" type="text/javascript"></script>
+<script src="https://demos.creative-tim.com/material-kit-pro/assets/js/plugins/moment.min.js"></script>
+<!--	Plugin for the Datepicker, full documentation here: https://github.com/Eonasdan/bootstrap-datetimepicker -->
+<script src="https://demos.creative-tim.com/material-kit-pro/assets/js/plugins/bootstrap-datetimepicker.js" type="text/javascript"></script>
+<!--  Plugin for the Sliders, full documentation here: http://refreshless.com/nouislider/ -->
+<script src="https://demos.creative-tim.com/material-kit-pro/assets/js/plugins/nouislider.min.js" type="text/javascript"></script>
+<!--  Google Maps Plugin  -->
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB2Yno10-YTnLjjn_Vtk0V8cdcY5lC4plU"></script>
+<!--	Plugin for Tags, full documentation here: https://github.com/bootstrap-tagsinput/bootstrap-tagsinputs  -->
+<script src="https://demos.creative-tim.com/material-kit-pro/assets/js/plugins/bootstrap-tagsinput.js"></script>
+<!--	Plugin for Select, full documentation here: http://silviomoreto.github.io/bootstrap-select -->
+<script src="https://demos.creative-tim.com/material-kit-pro/assets/js/plugins/bootstrap-selectpicker.js" type="text/javascript"></script>
+<!--	Plugin for Fileupload, full documentation here: http://www.jasny.net/bootstrap/javascript/#fileinput -->
+<script src="https://demos.creative-tim.com/material-kit-pro/assets/js/plugins/jasny-bootstrap.min.js" type="text/javascript"></script>
+<!-- Place this tag in your head or just before your close body tag. -->
+<script async defer src="https://buttons.github.io/buttons.js"></script>
+<!-- Control Center for Material Kit: parallax effects, scripts for the example pages etc -->
+<script src="https://demos.creative-tim.com/material-kit-pro/assets/js/material-kit.min.js?v=2.1.0" type="text/javascript"></script>
+<!-- include summernote css/js -->
+<script src="http://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.9/summernote.js"></script>
+<!-- firebase api -->
+<script src="https://www.gstatic.com/firebasejs/5.3.0/firebase.js"></script>
+<script src="https://www.gstatic.com/firebasejs/5.3.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/5.3.0/firebase-firestore.js"></script>
+<script src="https://apis.google.com/js/platform.js" async defer></script>
+
+<script>
+  
+
+
+  $(document).ready(function() {
+  	let config = {
+	    apiKey: "AIzaSyCVcPP0NnOLVjrScK0YoN6PRONjcy1HHvs",
+	    authDomain: "smecorp-neo.firebaseapp.com",
+	    databaseURL: "https://smecorp-neo.firebaseio.com",
+	    projectId: "smecorp-neo",
+	    storageBucket: "smecorp-neo.appspot.com",
+	    messagingSenderId: "504840354623"
+	  };
+	  let settings = {timestampsInSnapshots: true}
+	  firebase.initializeApp(config);
+		const firestore = firebase.firestore();
+	  firestore.settings(settings);
+	 
+	// Initialize Cloud Firestore through Firebase
+		
+  	   	firestore.collection("blog").onSnapshot(function(querySnapshot) {
+	        blogcard = '';
+  	   		$("#blogcard").empty();
+		    querySnapshot.forEach(function(doc) {
+		        // doc.data() is never undefined for query doc snapshots
+		        // console.log(doc.id, " => ", doc.data());
+					blogcard += ' <div class="row">';
+					blogcard += '	<div class="col-md-12">';
+					blogcard += '		<div class="card">';
+					blogcard += '			<div class="card-header card-header-danger">';
+					blogcard += '				<h4 class="card-title">'+doc.data().title+'</h4>';
+					blogcard += ' 				<p class="category">posted by '+doc.data().author+'</p>';
+					blogcard += '			</div>';
+					blogcard += '			<div class="card-body">';
+					blogcard += 				doc.data().content;
+					blogcard += '			</div>';
+					blogcard += '		</div>';
+					blogcard += '	</div>';
+					blogcard += '</div>';
+		    });
+			$("#blogcard").append(blogcard);
+	    });
+	  	$('#summernote').summernote();
+	  	$( "#blogpost" ).submit(function( event ) {
+	  		event.preventDefault();
+		  	var $inputs = $('#blogpost :input');
+		    var values = {};
+		    $inputs.each(function() {
+		        values[this.name] = $(this).val();
+		    });
+		    console.log("values",values,typeof moment().format());
+		    firestore.collection("blog").add({
+			    author :values.author,
+			    title : values.title,
+				content : values.content,
+				created_at: moment().format(),
+				publish: true,
+				updated_at: moment().format()
+			})
+			.then(function() {
+			    console.log("Document successfully written!");
+			})
+			.catch(function(error) {
+			    console.error("Error writing document: ", error);
+			});
+		});
+		function onSignIn(googleUser) {
+		  var profile = googleUser.getBasicProfile();
+		  console.log('ID: ' + profile.getId()); // Do not send to your backend! Use an ID token instead.
+		  console.log('Name: ' + profile.getName());
+		  console.log('Image URL: ' + profile.getImageUrl());
+		  console.log('Email: ' + profile.getEmail()); // This is null if the 'email' scope is not present.
+		}
+	});
+</script>
+</body>
+</html>
